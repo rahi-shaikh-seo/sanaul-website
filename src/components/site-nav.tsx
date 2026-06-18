@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/vegapixel-logo.png.asset.json";
+import logo from "@/assets/vegapixel-logo.png";
 
 const links = [
   { href: "#services", label: "Services" },
@@ -14,7 +14,7 @@ export function SiteNav() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo.url} alt="VegaPixel IT Solutions" className="h-9 w-auto" />
+          <img src={logo} alt="VegaPixel IT Solutions" className="h-9 w-auto" />
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
