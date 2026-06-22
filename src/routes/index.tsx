@@ -1,6 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
+import heroIllustration from "@/assets/hero-illustration.png";
+import caseHelix from "@/assets/case-helix.png";
+import caseNorthbridge from "@/assets/case-northbridge.png";
+import caseVerde from "@/assets/case-verde.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -94,6 +98,7 @@ const cases = [
     industry: "B2B SaaS · Healthcare",
     name: "Helix Care Platform",
     scope: "Platform rebuild + HIPAA cloud migration",
+    image: caseHelix,
     metrics: [
       { v: "−71%", l: "p95 API latency" },
       { v: "$1.2M", l: "Annual infra savings" },
@@ -104,6 +109,7 @@ const cases = [
     industry: "FinTech · Lending",
     name: "Northbridge Capital",
     scope: "AI underwriting copilot + data warehouse",
+    image: caseNorthbridge,
     metrics: [
       { v: "3.8×", l: "Loans processed per analyst" },
       { v: "−42%", l: "Time-to-decision" },
@@ -114,6 +120,7 @@ const cases = [
     industry: "Retail · Omnichannel",
     name: "Verde & Oak",
     scope: "Headless commerce + growth marketing",
+    image: caseVerde,
     metrics: [
       { v: "+187%", l: "DTC revenue (12 mo.)" },
       { v: "5.4:1", l: "Blended ROAS" },
@@ -145,28 +152,37 @@ function Index() {
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,var(--brand-surface),transparent_60%)]" />
           <div className="mx-auto max-w-7xl px-6 pt-20 pb-24 md:pt-28 md:pb-32">
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
-              [ Engineered IT · Measured Outcomes ]
-            </p>
-            <h1 className="mt-6 max-w-4xl text-5xl font-extrabold leading-[1.05] text-foreground md:text-7xl">
-              Modern IT solutions, engineered for the businesses that <span className="text-primary">refuse to stall</span>.
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              VegaPixel is the technology partner enterprise teams call when the roadmap is real, the deadline is unforgiving, and the result has to show up in the P&amp;L.
-            </p>
-            <div className="mt-10 flex flex-wrap gap-3">
-              <a
-                href="#contact"
-                className="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-md transition-all hover:translate-y-[-1px] hover:shadow-lg"
-              >
-                Book a Discovery Call
-              </a>
-              <a
-                href="#services"
-                className="inline-flex h-12 items-center justify-center rounded-lg border-2 border-primary bg-background px-6 text-sm font-semibold text-primary transition-colors hover:bg-secondary"
-              >
-                Explore Capabilities
-              </a>
+            <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+              <div>
+                <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
+                  [ Engineered IT · Measured Outcomes ]
+                </p>
+                <h1 className="mt-6 text-5xl font-extrabold leading-[1.05] text-foreground md:text-7xl">
+                  Modern IT solutions, engineered for the businesses that <span className="text-primary">refuse to stall</span>.
+                </h1>
+                <p className="mt-6 text-lg text-muted-foreground md:text-xl">
+                  VegaPixel is the technology partner enterprise teams call when the roadmap is real, the deadline is unforgiving, and the result has to show up in the P&amp;L.
+                </p>
+                <div className="mt-10 flex flex-wrap gap-3">
+                  <a
+                    href="#contact"
+                    className="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-md transition-all hover:translate-y-[-1px] hover:shadow-lg"
+                  >
+                    Book a Discovery Call
+                  </a>
+                  <a
+                    href="#services"
+                    className="inline-flex h-12 items-center justify-center rounded-lg border-2 border-primary bg-background px-6 text-sm font-semibold text-primary transition-colors hover:bg-secondary"
+                  >
+                    Explore Capabilities
+                  </a>
+                </div>
+              </div>
+              <div className="relative flex justify-center lg:justify-end">
+                <div className="relative w-full max-w-[550px] aspect-square rounded-2xl overflow-hidden border border-border/80 shadow-2xl bg-card">
+                  <img src={heroIllustration} alt="Modern technology network illustration" className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.02]" />
+                </div>
+              </div>
             </div>
 
             <dl className="mt-16 grid grid-cols-2 gap-6 border-t border-border pt-10 md:grid-cols-4">
@@ -302,18 +318,23 @@ function Index() {
             </h2>
             <div className="mt-14 grid gap-6 lg:grid-cols-3">
               {cases.map((c) => (
-                <article key={c.name} className="flex flex-col rounded-2xl border border-border bg-card p-7">
-                  <span className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">{c.industry}</span>
-                  <h3 className="mt-3 text-2xl font-semibold text-foreground">{c.name}</h3>
-                  <p className="mt-1 text-sm text-primary">{c.scope}</p>
-                  <dl className="mt-6 grid grid-cols-3 gap-3 border-t border-border pt-5">
-                    {c.metrics.map((m) => (
-                      <div key={m.l}>
-                        <dt className="font-display text-xl font-bold text-foreground">{m.v}</dt>
-                        <dd className="mt-1 text-[11px] leading-tight text-muted-foreground">{m.l}</dd>
-                      </div>
-                    ))}
-                  </dl>
+                <article key={c.name} className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-primary/50 hover:shadow-lg">
+                  <div className="aspect-[16/10] w-full overflow-hidden border-b border-border bg-secondary/30">
+                    <img src={c.image} alt={c.name} className="h-full w-full object-cover object-top transition-transform duration-500 hover:scale-105" />
+                  </div>
+                  <div className="flex flex-1 flex-col p-7">
+                    <span className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">{c.industry}</span>
+                    <h3 className="mt-3 text-2xl font-semibold text-foreground">{c.name}</h3>
+                    <p className="mt-1 text-sm text-primary">{c.scope}</p>
+                    <dl className="mt-6 grid grid-cols-3 gap-3 border-t border-border pt-5">
+                      {c.metrics.map((m) => (
+                        <div key={m.l}>
+                          <dt className="font-display text-xl font-bold text-foreground">{m.v}</dt>
+                          <dd className="mt-1 text-[11px] leading-tight text-muted-foreground">{m.l}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  </div>
                 </article>
               ))}
             </div>
