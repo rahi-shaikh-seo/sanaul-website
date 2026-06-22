@@ -10,9 +10,17 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "VegaPixel IT Solutions — Engineering Growth for Modern Businesses" },
-      { name: "description", content: "Data-driven IT solutions and digital growth engineering — custom software, cloud, AI automation, and performance marketing under one roof." },
+      {
+        name: "description",
+        content:
+          "Data-driven IT solutions and digital growth engineering — custom software, cloud, AI automation, and performance marketing under one roof.",
+      },
       { property: "og:title", content: "VegaPixel IT Solutions" },
-      { property: "og:description", content: "Modern IT solutions and digital growth engineering — built with precision, delivered with accountability." },
+      {
+        property: "og:description",
+        content:
+          "Modern IT solutions and digital growth engineering — built with precision, delivered with accountability.",
+      },
     ],
   }),
   component: Index,
@@ -24,49 +32,77 @@ const services = [
     title: "Custom Software Engineering",
     promise: "Ship production-grade products on a predictable cadence.",
     metric: "Avg. 14-week MVP",
-    bullets: ["Discovery, architecture & sprint planning", "React, Next.js, Node, .NET, Java", "QA automation & release management"],
+    bullets: [
+      "Discovery, architecture & sprint planning",
+      "React, Next.js, Node, .NET, Java",
+      "QA automation & release management",
+    ],
   },
   {
     code: "S02",
     title: "Cloud Modernization & DevOps",
     promise: "Cut infrastructure spend while improving uptime.",
     metric: "Up to 38% infra savings",
-    bullets: ["AWS · Azure · GCP migrations", "Kubernetes, Terraform, GitOps", "Observability & cost guardrails"],
+    bullets: [
+      "AWS · Azure · GCP migrations",
+      "Kubernetes, Terraform, GitOps",
+      "Observability & cost guardrails",
+    ],
   },
   {
     code: "S03",
     title: "AI & Intelligent Automation",
     promise: "Embed AI where it actually moves the P&L.",
     metric: "40–60% manual hours reclaimed",
-    bullets: ["LLM agents & RAG pipelines", "Document & workflow automation", "Model evaluation & guardrails"],
+    bullets: [
+      "LLM agents & RAG pipelines",
+      "Document & workflow automation",
+      "Model evaluation & guardrails",
+    ],
   },
   {
     code: "S04",
     title: "Data Engineering & Analytics",
     promise: "Turn scattered systems into one source of truth.",
     metric: "1 unified warehouse",
-    bullets: ["Snowflake · BigQuery · dbt", "Real-time event pipelines", "Executive dashboards in Looker / Power BI"],
+    bullets: [
+      "Snowflake · BigQuery · dbt",
+      "Real-time event pipelines",
+      "Executive dashboards in Looker / Power BI",
+    ],
   },
   {
     code: "S05",
     title: "Product Design & UX",
     promise: "Interfaces users finish, not abandon.",
     metric: "+52% task completion",
-    bullets: ["Research & journey mapping", "Design systems in Figma", "Accessibility (WCAG 2.2 AA)"],
+    bullets: [
+      "Research & journey mapping",
+      "Design systems in Figma",
+      "Accessibility (WCAG 2.2 AA)",
+    ],
   },
   {
     code: "S06",
     title: "Digital Growth Engineering",
     promise: "Performance marketing wired to revenue, not vanity.",
     metric: "Closed-loop attribution",
-    bullets: ["SEO, paid search & paid social", "Lifecycle email & CRM", "Experimentation & CRO programs"],
+    bullets: [
+      "SEO, paid search & paid social",
+      "Lifecycle email & CRM",
+      "Experimentation & CRO programs",
+    ],
   },
   {
     code: "S07",
     title: "Managed IT & Cybersecurity",
     promise: "24/7 coverage with a named engineer on every account.",
     metric: "SOC 2-aligned playbooks",
-    bullets: ["Endpoint, identity & SaaS hardening", "Incident response & DR drills", "Compliance: SOC 2 · HIPAA · ISO 27001"],
+    bullets: [
+      "Endpoint, identity & SaaS hardening",
+      "Incident response & DR drills",
+      "Compliance: SOC 2 · HIPAA · ISO 27001",
+    ],
   },
 ];
 
@@ -75,22 +111,53 @@ const stack = [
   { label: "Frameworks", items: "Next.js · React · Vue · Nest · Spring · .NET · FastAPI" },
   { label: "Data", items: "Postgres · Snowflake · BigQuery · Mongo · Redis · Kafka · dbt" },
   { label: "Cloud & Infra", items: "AWS · Azure · GCP · Cloudflare · Terraform · Pulumi" },
-  { label: "AI Platforms", items: "OpenAI · Anthropic · Gemini · Mistral · Llama · LangGraph · Pinecone" },
+  {
+    label: "AI Platforms",
+    items: "OpenAI · Anthropic · Gemini · Mistral · Llama · LangGraph · Pinecone",
+  },
   { label: "DevOps", items: "Kubernetes · Docker · GitHub Actions · ArgoCD · Datadog · Grafana" },
 ];
 
 const differentiators = [
-  { title: "Senior-only delivery teams", body: "Every engagement is led by engineers with 8+ years of shipping. No bait-and-switch staffing." },
-  { title: "Outcome-based contracts", body: "We price against business milestones, not hours. You always know what you're paying for and why." },
-  { title: "North American coverage", body: "Pods aligned to PT, MT, CT and ET — daily standups in your timezone, not ours." },
-  { title: "Code, data & docs you own", body: "Repos, dashboards, and runbooks transfer to your team on day one. Zero vendor lock-in." },
+  {
+    title: "Senior-only delivery teams",
+    body: "Every engagement is led by engineers with 8+ years of shipping. No bait-and-switch staffing.",
+  },
+  {
+    title: "Outcome-based contracts",
+    body: "We price against business milestones, not hours. You always know what you're paying for and why.",
+  },
+  {
+    title: "North American coverage",
+    body: "Pods aligned to PT, MT, CT and ET — daily standups in your timezone, not ours.",
+  },
+  {
+    title: "Code, data & docs you own",
+    body: "Repos, dashboards, and runbooks transfer to your team on day one. Zero vendor lock-in.",
+  },
 ];
 
 const process = [
-  { step: "01", title: "Diagnose", body: "Two-week paid discovery: systems audit, stakeholder interviews, measurable target set." },
-  { step: "02", title: "Design", body: "Solution architecture, scope of work, and a fixed-fee delivery plan reviewed by your team." },
-  { step: "03", title: "Deliver", body: "Two-week sprints, weekly demos, transparent burndown. Production releases, not slideware." },
-  { step: "04", title: "Drive", body: "Continuous optimization against the original KPI — handover or ongoing partnership, your call." },
+  {
+    step: "01",
+    title: "Diagnose",
+    body: "Two-week paid discovery: systems audit, stakeholder interviews, measurable target set.",
+  },
+  {
+    step: "02",
+    title: "Design",
+    body: "Solution architecture, scope of work, and a fixed-fee delivery plan reviewed by your team.",
+  },
+  {
+    step: "03",
+    title: "Deliver",
+    body: "Two-week sprints, weekly demos, transparent burndown. Production releases, not slideware.",
+  },
+  {
+    step: "04",
+    title: "Drive",
+    body: "Continuous optimization against the original KPI — handover or ongoing partnership, your call.",
+  },
 ];
 
 const cases = [
@@ -130,17 +197,47 @@ const cases = [
 ];
 
 const testimonials = [
-  { quote: "VegaPixel is the first technology partner that gave us a roadmap we could actually defend to our board.", who: "Mariana Ortiz", role: "CTO, Helix Care" },
-  { quote: "We replaced two agencies and an internal pod with VegaPixel. Output went up and the slack got quieter.", who: "James Whitford", role: "VP Engineering, Northbridge" },
-  { quote: "They built our checkout, our warehouse, and our growth program — and treated each like the only one that mattered.", who: "Aisha Bell", role: "Founder, Verde & Oak" },
+  {
+    quote:
+      "VegaPixel is the first technology partner that gave us a roadmap we could actually defend to our board.",
+    who: "Mariana Ortiz",
+    role: "CTO, Helix Care",
+  },
+  {
+    quote:
+      "We replaced two agencies and an internal pod with VegaPixel. Output went up and the slack got quieter.",
+    who: "James Whitford",
+    role: "VP Engineering, Northbridge",
+  },
+  {
+    quote:
+      "They built our checkout, our warehouse, and our growth program — and treated each like the only one that mattered.",
+    who: "Aisha Bell",
+    role: "Founder, Verde & Oak",
+  },
 ];
 
 const faqs = [
-  { q: "How are engagements priced?", a: "Most projects are fixed-fee against a defined scope, with optional retainer pods afterwards. Discovery sprints are flat-rate so you can evaluate fit before committing." },
-  { q: "Do you work with regulated industries?", a: "Yes. We have shipped under HIPAA, SOC 2, PCI-DSS, and FINRA constraints, and we can sign BAAs and security addenda before kickoff." },
-  { q: "Can you augment our existing engineering team?", a: "Absolutely. Embedded pods of 2–8 senior engineers are one of our most common shapes, with daily collaboration in your repos and tools." },
-  { q: "What does a typical timeline look like?", a: "Discovery runs 1–2 weeks. First production release usually lands in week 6. Most platform rebuilds ship a full v1 inside 14 weeks." },
-  { q: "Who owns the IP we build together?", a: "You do — completely. All code, infrastructure, and documentation transfer to your accounts and repositories on delivery." },
+  {
+    q: "How are engagements priced?",
+    a: "Most projects are fixed-fee against a defined scope, with optional retainer pods afterwards. Discovery sprints are flat-rate so you can evaluate fit before committing.",
+  },
+  {
+    q: "Do you work with regulated industries?",
+    a: "Yes. We have shipped under HIPAA, SOC 2, PCI-DSS, and FINRA constraints, and we can sign BAAs and security addenda before kickoff.",
+  },
+  {
+    q: "Can you augment our existing engineering team?",
+    a: "Absolutely. Embedded pods of 2–8 senior engineers are one of our most common shapes, with daily collaboration in your repos and tools.",
+  },
+  {
+    q: "What does a typical timeline look like?",
+    a: "Discovery runs 1–2 weeks. First production release usually lands in week 6. Most platform rebuilds ship a full v1 inside 14 weeks.",
+  },
+  {
+    q: "Who owns the IP we build together?",
+    a: "You do — completely. All code, infrastructure, and documentation transfer to your accounts and repositories on delivery.",
+  },
 ];
 
 function Index() {
@@ -158,10 +255,12 @@ function Index() {
                   [ Engineered IT · Measured Outcomes ]
                 </p>
                 <h1 className="mt-6 text-5xl font-extrabold leading-[1.05] text-foreground md:text-7xl">
-                  Modern IT solutions, engineered for the businesses that <span className="text-primary">refuse to stall</span>.
+                  Modern IT solutions, engineered for the businesses that{" "}
+                  <span className="text-primary">refuse to stall</span>.
                 </h1>
                 <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-                  VegaPixel is the technology partner enterprise teams call when the roadmap is real, the deadline is unforgiving, and the result has to show up in the P&amp;L.
+                  VegaPixel is the technology partner enterprise teams call when the roadmap is
+                  real, the deadline is unforgiving, and the result has to show up in the P&amp;L.
                 </p>
                 <div className="mt-10 flex flex-wrap gap-3">
                   <a
@@ -180,7 +279,11 @@ function Index() {
               </div>
               <div className="relative flex justify-center lg:justify-end">
                 <div className="relative w-full max-w-[550px] aspect-square rounded-2xl overflow-hidden border border-border/80 shadow-2xl bg-card">
-                  <img src={heroIllustration} alt="Modern technology network illustration" className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.02]" />
+                  <img
+                    src={heroIllustration}
+                    alt="Modern technology network illustration"
+                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.02]"
+                  />
                 </div>
               </div>
             </div>
@@ -193,8 +296,12 @@ function Index() {
                 ["NA + EU", "Delivery coverage"],
               ].map(([v, l]) => (
                 <div key={l}>
-                  <dt className="font-display text-3xl font-bold text-foreground md:text-4xl">{v}</dt>
-                  <dd className="mt-1 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">{l}</dd>
+                  <dt className="font-display text-3xl font-bold text-foreground md:text-4xl">
+                    {v}
+                  </dt>
+                  <dd className="mt-1 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
+                    {l}
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -206,13 +313,16 @@ function Index() {
           <div className="mx-auto max-w-7xl px-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div className="max-w-2xl">
-                <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">// Capabilities</p>
+                <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
+                  // Capabilities
+                </p>
                 <h2 className="mt-3 text-4xl font-bold text-foreground md:text-5xl">
                   Seven engineered practices. One accountable partner.
                 </h2>
               </div>
               <p className="max-w-md text-muted-foreground">
-                Engage a single discipline or compose them into an integrated delivery program. Either way, you get one team, one roadmap, one invoice.
+                Engage a single discipline or compose them into an integrated delivery program.
+                Either way, you get one team, one roadmap, one invoice.
               </p>
             </div>
 
@@ -223,7 +333,9 @@ function Index() {
                   className="group flex flex-col rounded-2xl border border-border bg-card p-7 transition-all hover:border-primary hover:shadow-[0_8px_30px_-12px_oklch(0.52_0.13_235_/_0.35)]"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-xs uppercase tracking-wider text-muted-foreground">{s.code}</span>
+                    <span className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
+                      {s.code}
+                    </span>
                     <span className="rounded-full bg-secondary px-3 py-1 font-mono text-[10px] uppercase tracking-wider text-primary">
                       {s.metric}
                     </span>
@@ -257,7 +369,9 @@ function Index() {
                   key={row.label}
                   className="rounded-xl border border-border bg-background p-6 transition-colors hover:border-primary"
                 >
-                  <div className="font-mono text-[11px] uppercase tracking-wider text-primary">{row.label}</div>
+                  <div className="font-mono text-[11px] uppercase tracking-wider text-primary">
+                    {row.label}
+                  </div>
                   <p className="mt-3 text-base text-foreground">{row.items}</p>
                 </div>
               ))}
@@ -270,18 +384,24 @@ function Index() {
           <div className="mx-auto max-w-7xl px-6">
             <div className="grid gap-12 lg:grid-cols-2">
               <div>
-                <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">// Why VegaPixel</p>
+                <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
+                  // Why VegaPixel
+                </p>
                 <h2 className="mt-3 text-4xl font-bold text-foreground md:text-5xl">
                   Built like an in-house team — priced like a partner.
                 </h2>
                 <p className="mt-6 text-lg text-muted-foreground">
-                  We are not an outsourcing shop, a body-leasing agency, or a deck-first consultancy. We are a senior engineering studio with a marketing arm, structured to ship things you can measure.
+                  We are not an outsourcing shop, a body-leasing agency, or a deck-first
+                  consultancy. We are a senior engineering studio with a marketing arm, structured
+                  to ship things you can measure.
                 </p>
               </div>
               <div className="grid gap-5 sm:grid-cols-2">
                 {differentiators.map((d) => (
                   <div key={d.title} className="rounded-xl border border-border bg-card p-6">
-                    <h3 className="font-display text-base font-semibold text-foreground">{d.title}</h3>
+                    <h3 className="font-display text-base font-semibold text-foreground">
+                      {d.title}
+                    </h3>
                     <p className="mt-2 text-sm text-muted-foreground">{d.body}</p>
                   </div>
                 ))}
@@ -293,14 +413,18 @@ function Index() {
         {/* Process */}
         <section className="border-t border-border bg-foreground py-24 text-background">
           <div className="mx-auto max-w-7xl px-6">
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">// Engagement Model</p>
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
+              // Engagement Model
+            </p>
             <h2 className="mt-3 max-w-3xl text-4xl font-bold md:text-5xl">
               A four-phase rhythm, repeated until the metric moves.
             </h2>
             <div className="mt-14 grid gap-6 md:grid-cols-4">
               {process.map((p) => (
                 <div key={p.step} className="border-t-2 border-primary pt-5">
-                  <div className="font-mono text-xs uppercase tracking-wider text-primary">Phase {p.step}</div>
+                  <div className="font-mono text-xs uppercase tracking-wider text-primary">
+                    Phase {p.step}
+                  </div>
                   <h3 className="mt-2 text-2xl font-semibold">{p.title}</h3>
                   <p className="mt-3 text-sm text-background/70">{p.body}</p>
                 </div>
@@ -312,25 +436,38 @@ function Index() {
         {/* Case Studies */}
         <section id="work" className="border-t border-border bg-background py-24">
           <div className="mx-auto max-w-7xl px-6">
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">// Selected Work</p>
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
+              // Selected Work
+            </p>
             <h2 className="mt-3 max-w-3xl text-4xl font-bold text-foreground md:text-5xl">
               Outcomes that survive contact with the board.
             </h2>
             <div className="mt-14 grid gap-6 lg:grid-cols-3">
               {cases.map((c) => (
-                <article key={c.name} className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-primary/50 hover:shadow-lg">
+                <article
+                  key={c.name}
+                  className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-primary/50 hover:shadow-lg"
+                >
                   <div className="aspect-[16/10] w-full overflow-hidden border-b border-border bg-secondary/30">
-                    <img src={c.image} alt={c.name} className="h-full w-full object-cover object-top transition-transform duration-500 hover:scale-105" />
+                    <img
+                      src={c.image}
+                      alt={c.name}
+                      className="h-full w-full object-cover object-top transition-transform duration-500 hover:scale-105"
+                    />
                   </div>
                   <div className="flex flex-1 flex-col p-7">
-                    <span className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">{c.industry}</span>
+                    <span className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
+                      {c.industry}
+                    </span>
                     <h3 className="mt-3 text-2xl font-semibold text-foreground">{c.name}</h3>
                     <p className="mt-1 text-sm text-primary">{c.scope}</p>
                     <dl className="mt-6 grid grid-cols-3 gap-3 border-t border-border pt-5">
                       {c.metrics.map((m) => (
                         <div key={m.l}>
                           <dt className="font-display text-xl font-bold text-foreground">{m.v}</dt>
-                          <dd className="mt-1 text-[11px] leading-tight text-muted-foreground">{m.l}</dd>
+                          <dd className="mt-1 text-[11px] leading-tight text-muted-foreground">
+                            {m.l}
+                          </dd>
                         </div>
                       ))}
                     </dl>
@@ -344,10 +481,15 @@ function Index() {
         {/* Testimonials */}
         <section className="border-t border-border bg-secondary/50 py-24">
           <div className="mx-auto max-w-7xl px-6">
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">// In their words</p>
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
+              // In their words
+            </p>
             <div className="mt-10 grid gap-6 md:grid-cols-3">
               {testimonials.map((t) => (
-                <figure key={t.who} className="flex flex-col rounded-2xl border border-border bg-background p-7">
+                <figure
+                  key={t.who}
+                  className="flex flex-col rounded-2xl border border-border bg-background p-7"
+                >
                   <blockquote className="font-display text-lg leading-snug text-foreground">
                     “{t.quote}”
                   </blockquote>
@@ -384,14 +526,20 @@ function Index() {
         </section>
 
         {/* CTA */}
-        <section id="contact" className="border-t border-border bg-foreground py-24 text-background">
+        <section
+          id="contact"
+          className="border-t border-border bg-foreground py-24 text-background"
+        >
           <div className="mx-auto max-w-5xl px-6 text-center">
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">// Let's build</p>
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
+              // Let's build
+            </p>
             <h2 className="mt-4 text-4xl font-bold md:text-6xl">
               Bring us the thing that <span className="text-primary">has to ship</span>.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-background/70">
-              A 30-minute call with a principal engineer and a strategist. No pitch deck — just a working plan you can take back to your team.
+              A 30-minute call with a principal engineer and a strategist. No pitch deck — just a
+              working plan you can take back to your team.
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-3">
               <a

@@ -78,10 +78,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "VegaPixel IT Solutions — Engineering Growth for Modern Businesses" },
-      { name: "description", content: "VegaPixel is a data-driven IT and digital solutions partner. Custom software, cloud, AI automation, and performance marketing for US and Canadian enterprises." },
+      {
+        name: "description",
+        content:
+          "VegaPixel is a data-driven IT and digital solutions partner. Custom software, cloud, AI automation, and performance marketing for US and Canadian enterprises.",
+      },
       { name: "author", content: "VegaPixel IT Solutions" },
       { property: "og:title", content: "VegaPixel IT Solutions" },
-      { property: "og:description", content: "Modern IT solutions and digital growth engineering — built with precision, delivered with accountability." },
+      {
+        property: "og:description",
+        content:
+          "Modern IT solutions and digital growth engineering — built with precision, delivered with accountability.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@vegapixel" },

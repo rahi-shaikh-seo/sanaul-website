@@ -7,7 +7,8 @@ export function SiteFooter() {
         <div className="md:col-span-2">
           <img src={logo} alt="VegaPixel IT Solutions" className="h-10 w-auto" />
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            VegaPixel IT Solutions engineers digital systems that scale. Software, cloud, AI, and growth — under one accountable roof.
+            VegaPixel IT Solutions engineers digital systems that scale. Software, cloud, AI, and
+            growth — under one accountable roof.
           </p>
           <p className="mt-4 font-mono text-xs uppercase tracking-wider text-muted-foreground">
             hello@vegapixel.io · vegapixel.io
